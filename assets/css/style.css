@@ -8,6 +8,12 @@ body {
     width: 200px;
     height: 200px;
     display: inline-block;
+    cursor: pointer;
+}
+
+.panel:hover {
+    border: 3px solid cyan;
+    
 }
 
 .bottom-left-panel {
@@ -30,13 +36,18 @@ body {
     background-color: blue;
 }
 
+.active {
+    background-color: white;
+}
+
+
 .center {
     display: inline-block;
     position: absolute;
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    background-color: gray;
-    top: 135px;
-    left: 540px;
+    background-color: black;
+    top: 410px;
+    left: 860px;
 }
