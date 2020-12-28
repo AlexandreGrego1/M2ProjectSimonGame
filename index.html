@@ -7,16 +7,35 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
 <body>
-    <div class="row">
+    <header>
+        <h1>Simon Game by dev Alexandre Gregorio</h1>
+        <ol class="list">
+            <li>Press the Play button. Simon will give the first signal. Repeat the signal by pressing the same color lens.</li>
+            <li>Simon will duplicate the first signal and add one. Repeat these two signals by pressing the same color lenses, in order.</li>
+            <li>Simon will duplicate these first two signals and add one.</li>
+            <li>Continue playing as long as you can repeat each sequence of sig- nals correctly. After the 5th, 9th and 13th signals in a sequence, Simon automatically speeds up.</li>
+        </ol>
+    </header>
+
+    <div>
         <div onclick="panelClicked(event.currentTarget)" class="panel top-left-panel"></div>
         <div onclick="panelClicked(event.currentTarget)" class="panel top-right-panel"></div>
     </div>
-    <div class="row">
+    <div>
         <div onclick="panelClicked(event.currentTarget)" class="panel bottom-left-panel"></div>
         <div onclick="panelClicked(event.currentTarget)" class="panel bottom-right-panel"></div>
     </div>
-    <div class="center"></div>
 
+    <div id="inner-circle">
+        <div id="title" class="font-effect-emboss">SIMON</div>
+        <div id="switches">
+            <button class="button" id="start">Start</button>
+        </div>
+      <div id="turn"></div>
+      <div class="text2">
+        COUNT
+      </div>
+    </div>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
