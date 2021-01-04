@@ -1,11 +1,13 @@
-const topLeft = document.querySelector('.top-left-panel');
-const topRight = document.querySelector('.top-right-panel');
-const bottomLeft = document.querySelector(
-    '.bottom-left-panel'
-);
-const bottomRight = document.querySelector(
-    '.bottom-right-panel'
-);
+const topLeft = document.querySelector('.top-left');
+const topRight = document.querySelector('.top-right');
+const bottomLeft = document.querySelector('.bottom-left');
+const bottomRight = document.querySelector('.bottom-right');
+
+document.getElementById("start").addEventListener("click", start_game);
+
+function start_game(){
+    console.log("Game has started!");
+}
 
 const getRandomPanel = () => {
     const panels = [
@@ -30,7 +32,7 @@ const flash = panel => {
             );
             setTimeout(() => {
                 resolve();
-            }, 250);
+            }, 500);
         }, 800);
     });
 };
